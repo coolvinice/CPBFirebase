@@ -17,6 +17,8 @@
 		C6EDCE862AF94CDC005088AE /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C6EDCE852AF94CDC005088AE /* FirebaseAnalyticsSwift */; };
 		C6EDCE882AF94CDC005088AE /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = C6EDCE872AF94CDC005088AE /* FirebaseAnalyticsWithoutAdIdSupport */; };
 		C6EDCE8A2AF94CDC005088AE /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = C6EDCE892AF94CDC005088AE /* FirebaseAppCheck */; };
+		C6EDCE8C2AF94F51005088AE /* CollegeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EDCE8B2AF94F51005088AE /* CollegeModel.swift */; };
+		C6EDCE8E2AF94F9F005088AE /* CollegeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EDCE8D2AF94F9F005088AE /* CollegeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		C6EDCE742AF94B6C005088AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6EDCE772AF94B6C005088AE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C6EDCE7E2AF94C6A005088AE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C6EDCE8B2AF94F51005088AE /* CollegeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollegeModel.swift; sourceTree = "<group>"; };
+		C6EDCE8D2AF94F9F005088AE /* CollegeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollegeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,8 @@
 			children = (
 				C6EDCE7E2AF94C6A005088AE /* GoogleService-Info.plist */,
 				C6EDCE702AF94B68005088AE /* CPBFirebaseApp.swift */,
+				C6EDCE8B2AF94F51005088AE /* CollegeModel.swift */,
+				C6EDCE8D2AF94F9F005088AE /* CollegeViewModel.swift */,
 				C6EDCE722AF94B68005088AE /* ContentView.swift */,
 				C6EDCE742AF94B6C005088AE /* Assets.xcassets */,
 				C6EDCE762AF94B6C005088AE /* Preview Content */,
@@ -161,8 +167,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6EDCE8E2AF94F9F005088AE /* CollegeViewModel.swift in Sources */,
 				C6EDCE732AF94B68005088AE /* ContentView.swift in Sources */,
 				C6EDCE712AF94B68005088AE /* CPBFirebaseApp.swift in Sources */,
+				C6EDCE8C2AF94F51005088AE /* CollegeModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
