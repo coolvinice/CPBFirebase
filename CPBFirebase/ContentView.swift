@@ -25,6 +25,7 @@ struct ContentView: View {
                 
                 Button("Add") {
                     viewModel.AddCollege(currentCollege: College(name: addName, location: addLocation, population: addPopulation, URL: addURL))
+                    viewModel.PullFromFirebase()
                     addName = ""
                     addLocation = ""
                     addPopulation = 0

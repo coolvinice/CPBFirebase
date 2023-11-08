@@ -34,11 +34,9 @@ class CollegeViewModel: ObservableObject {
                 var newList: [College] = []
                 for college in mySnapshot?.children.allObjects as! [DataSnapshot] {
                     var collegeName = college.key
-                    var dictionary = college.value as! [String:String]
+                    var dictionary = college.value as! [String:Any]
                     guard let location  = dictionary["Location"] else { return }
-                    dictionary = college.value as! [String:Int]
                     guard let population  = dictionary["Population"] else { return }
-                    dictionary = college.value as! [String:String]
                     guard let URL  = dictionary["URL"] else { return }
                     
                     newList.append(College(name: collegeName, location: location, population: population, URL: population))
