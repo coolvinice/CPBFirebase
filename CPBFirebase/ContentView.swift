@@ -16,11 +16,16 @@ struct ContentView: View {
     var addURL: String
     var body: some View {
         VStack {
+            Button("Add College") {
+                addAlert = true
+            }
+            .padding()
             List {
                 ForEach(viewModel.collegeList) { college in
                     CollegeListItem(college: college)
                 }
             }
+            .padding()
             .alert("Add College", isPresented: $addAlert) {
                 
                 Button("Add") {
@@ -45,7 +50,6 @@ struct ContentView: View {
                 TextField("Website URL", text: $addURL)
             }
         }
-        .padding()
         .onAppear(perform: {
             viewModel.PullFromFirebase()
         })
