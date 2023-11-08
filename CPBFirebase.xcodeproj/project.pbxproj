@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C63DDFBA2AFBEDBA0032B2A4 /* CollegeListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63DDFB92AFBEDBA0032B2A4 /* CollegeListItem.swift */; };
 		C6EDCE712AF94B68005088AE /* CPBFirebaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EDCE702AF94B68005088AE /* CPBFirebaseApp.swift */; };
 		C6EDCE732AF94B68005088AE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EDCE722AF94B68005088AE /* ContentView.swift */; };
 		C6EDCE752AF94B6C005088AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6EDCE742AF94B6C005088AE /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C63DDFB92AFBEDBA0032B2A4 /* CollegeListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollegeListItem.swift; sourceTree = "<group>"; };
 		C6EDCE6D2AF94B68005088AE /* CPBFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CPBFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6EDCE702AF94B68005088AE /* CPBFirebaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPBFirebaseApp.swift; sourceTree = "<group>"; };
 		C6EDCE722AF94B68005088AE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 			children = (
 				C6EDCE7E2AF94C6A005088AE /* GoogleService-Info.plist */,
 				C6EDCE702AF94B68005088AE /* CPBFirebaseApp.swift */,
+				C63DDFB92AFBEDBA0032B2A4 /* CollegeListItem.swift */,
 				C6EDCE8B2AF94F51005088AE /* CollegeModel.swift */,
 				C6EDCE8D2AF94F9F005088AE /* CollegeViewModel.swift */,
 				C6EDCE722AF94B68005088AE /* ContentView.swift */,
@@ -170,6 +173,7 @@
 				C6EDCE8E2AF94F9F005088AE /* CollegeViewModel.swift in Sources */,
 				C6EDCE732AF94B68005088AE /* ContentView.swift in Sources */,
 				C6EDCE712AF94B68005088AE /* CPBFirebaseApp.swift in Sources */,
+				C63DDFBA2AFBEDBA0032B2A4 /* CollegeListItem.swift in Sources */,
 				C6EDCE8C2AF94F51005088AE /* CollegeModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
