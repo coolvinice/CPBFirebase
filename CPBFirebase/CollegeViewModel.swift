@@ -17,7 +17,7 @@ class CollegeViewModel: ObservableObject {
         }
         
         func AddCollege(currentCollege: College) {
-            colleges.append(currentCollege)
+            collegeList.append(currentCollege)
             AddToFirebase(college: currentCollege)
         }
         
@@ -25,7 +25,7 @@ class CollegeViewModel: ObservableObject {
             let database = Database.database().reference()
             database.child("Colleges").child(college.name).child("Location").setValue(college.location)
             database.child("Colleges").child(college.name).child("Population").setValue(college.population)
-            database.child("Colleges").child(college.name).child("URL").setValue(college.url)
+            database.child("Colleges").child(college.name).child("URL").setValue(college.URL)
         }
         
         func PullFromFirebase() {
@@ -39,7 +39,7 @@ class CollegeViewModel: ObservableObject {
                     guard let population  = dictionary["Population"] else { return }
                     guard let URL  = dictionary["URL"] else { return }
                     
-                    newList.append(College(name: collegeName, location: location, population: population, URL: population))
+                    newList.append(College(name: collegeName, location: location as! String, population: population as! Int, URL: population as! String))
                 }
             }
         }}
